@@ -57,7 +57,7 @@
                 android:id="@+id/ExampleName"
                 android:layout_column="0" />
             <TextView
-                android:text="Example Name2"
+                android:text="ExampleName2"
                 android:textAppearance="?android:attr/textAppearanceMedium"
                 android:id="@+id/ExampleName2"
                 android:layout_column="1"
