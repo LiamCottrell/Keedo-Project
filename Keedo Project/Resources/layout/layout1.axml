@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <TableLayout
+        android:minWidth="25px"
+        android:minHeight="25px"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/tableLayout1"
+        android:layout_marginTop="108.5dp">
+        <TableRow
+            android:id="@+id/tableRow1">
+            <ImageView
+                android:src="@android:drawable/ic_menu_gallery"
+                android:id="@+id/Example Image"
+                android:layout_column="0"
+                android:layout_marginLeft="10.0dp" />
+            <ImageView
+                android:src="@android:drawable/ic_menu_gallery"
+                android:id="@+id/Example Image"
+                android:layout_column="1"
+                android:layout_marginLeft="10.0dp" />
+        </TableRow>
+        <TableRow
+            android:id="@+id/tableRow2">
+            <TextView
+                android:text="Example Name"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:id="@+id/ExampleName"
+                android:layout_column="0" />
+            <TextView
+                android:text="Example Name"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:id="@+id/ExampleName"
+                android:layout_column="1"
+                android:layout_marginLeft="10.0dp" />
+        </TableRow>
+        <TableRow
+            android:id="@+id/tableRow3">
+            <TextView
+                android:text="£4.00"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:id="@+id/ExamplePrice"
+                android:layout_column="0" />
+            <TextView
+                android:text="£4.00"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:id="@+id/ExamplePrice"
+                android:layout_column="1"
+                android:layout_marginLeft="10.0dp" />
+        </TableRow>
+    </TableLayout>
+</LinearLayout>
