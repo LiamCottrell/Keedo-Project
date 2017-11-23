@@ -26,8 +26,7 @@
         android:layout_marginTop="136.5dp"
         android:layout_marginRight="23.0dp"
         android:layout_centerVertical="false"
-        android:layout_centerHorizontal="true"
-         />
+        android:layout_centerHorizontal="true" />
     <TableLayout
         android:minWidth="25px"
         android:minHeight="25px"
@@ -58,7 +57,7 @@
                 android:id="@+id/ExampleName"
                 android:layout_column="0" />
             <TextView
-                android:text="ExampleName2"
+                android:text="Example Name2"
                 android:textAppearance="?android:attr/textAppearanceMedium"
                 android:id="@+id/ExampleName2"
                 android:layout_column="1"
