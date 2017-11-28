@@ -9,8 +9,8 @@ namespace Keedo_Project
     [Activity(Label = "Keedo_Project", MainLauncher = true)]
     public class MainActivity : Activity
     {
-
         private Button Clicker;
+        DatabaseConnection DatabaseHandle = new DatabaseConnection();
 
         protected override void OnCreate(Bundle savedInstanceState)
         {
@@ -26,8 +26,7 @@ namespace Keedo_Project
 
         async void ClickedItem(object sender, EventArgs e)
         {
-            Test dbh = new Test();
-            await dbh.AddBook(this);
+            
         }
     }
 }
