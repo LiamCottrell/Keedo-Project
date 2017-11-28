@@ -28,7 +28,7 @@ namespace Keedo_Project.Resources.Database
             try
             {
                 //Point our client towards the backend
-                Client = new MobileServiceClient("http://keedoapp.azurewebsites.net");
+                Client = new MobileServiceClient("http://penguinlibrary.azurewebsites.net");
 
                 //Get the table model from the backend.
                 bookTable = Client.GetTable<Books>();

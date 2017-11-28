@@ -26,8 +26,8 @@ namespace Keedo_Project
 
         async void ClickedItem(object sender, EventArgs e)
         {
-            Test x = new Test();
-            await x.AddBook(this);
+            Test dbh = new Test();
+            await dbh.AddBook(this);
         }
     }
 }
