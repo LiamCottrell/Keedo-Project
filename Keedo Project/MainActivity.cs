@@ -1,6 +1,6 @@
 ﻿using Android.App;
-using Android.Widget;
 using Android.OS;
+using Android.Widget;
 using Keedo_Project.Resources.Database;
 using System;
 
@@ -26,7 +26,7 @@ namespace Keedo_Project
 
         async void ClickedItem(object sender, EventArgs e)
         {
-            
+
         }
     }
 }
