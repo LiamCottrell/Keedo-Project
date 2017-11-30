@@ -20,7 +20,6 @@ namespace Keedo_Project.Resources.DialogControl
             var Alert = new AlertDialog.Builder(context);
             //Set our message as the passed in x variable
             Alert.SetMessage(x);
-
             //Set the neutural click button text
             Alert.SetNeutralButton("Anakin, Anakin NO!!!", delegate { });
             //Display built alert to user.
