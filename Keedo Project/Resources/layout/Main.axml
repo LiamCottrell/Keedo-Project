@@ -26,58 +26,14 @@
         android:layout_marginTop="136.5dp"
         android:layout_marginRight="23.0dp"
         android:layout_centerVertical="false"
-        android:layout_centerHorizontal="true" />
-    <TableLayout
-        android:minWidth="25px"
-        android:minHeight="25px"
+        android:layout_centerHorizontal="true"
+        android:theme="@android:style/Theme.Material.Panel" />
+<!--<GridView
+        android:layout_marginLeft="50.0dp"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginTop="190.0dp"
-        android:id="@+id/tableLayout1"
-        android:layout_centerHorizontal="true"
-        android:layout_marginLeft="50.0dp">
-        <TableRow
-            android:id="@+id/tableRow1">
-            <ImageView
-                android:src="@android:drawable/ic_menu_gallery"
-                android:id="@+id/ExampleImage"
-                android:layout_column="0"
-                android:layout_marginLeft="10.0dp" />
-            <ImageView
-                android:src="@android:drawable/ic_menu_gallery"
-                android:id="@+id/Example2Image2"
-                android:layout_column="1"
-                android:layout_marginLeft="10.0dp" />
-        </TableRow>
-        <TableRow
-            android:id="@+id/tableRow2">
-            <TextView
-                android:text="ExampleName"
-                android:textAppearance="?android:attr/textAppearanceMedium"
-                android:id="@+id/ExampleName"
-                android:layout_column="0" />
-            <TextView
-                android:text="ExampleName2"
-                android:textAppearance="?android:attr/textAppearanceMedium"
-                android:id="@+id/ExampleName2"
-                android:layout_column="1"
-                android:layout_marginLeft="10.0dp" />
-        </TableRow>
-        <TableRow
-            android:id="@+id/tableRow3">
-            <TextView
-                android:text="£4.00"
-                android:textAppearance="?android:attr/textAppearanceSmall"
-                android:id="@+id/ExamplePrice"
-                android:layout_column="0" />
-            <TextView
-                android:text="£4.00"
-                android:textAppearance="?android:attr/textAppearanceSmall"
-                android:id="@+id/ExamplePrice2"
-                android:layout_column="1"
-                android:layout_marginLeft="10.0dp" />
-        </TableRow>
-    </TableLayout>
+        android:numColumns="" />-->
     <Toolbar
         android:background="?android:attr/colorPrimary"
         android:layout_width="wrap_content"
