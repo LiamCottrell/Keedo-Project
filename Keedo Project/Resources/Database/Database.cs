@@ -12,6 +12,7 @@ using Android.Widget;
 using Keedo_Project.Resources.Datamodel;
 using Microsoft.WindowsAzure.MobileServices;
 using System.Threading.Tasks;
+using System.Net.Http;
 
 namespace Keedo_Project.Resources.Database
 {
@@ -19,28 +20,33 @@ namespace Keedo_Project.Resources.Database
     {
 
         //Create our client and table variables
-        public MobileServiceClient Client { get; set; }
 
-        IMobileServiceTable<InventoryTypes> Inventory;
+        //HttpClient client;
 
-        public DatabaseConnection()
-        {
-            System.Diagnostics.Debug.WriteLine("Create Connection");
-            try
-            {
-                //Point our client towards the backend
-                Client = new MobileServiceClient("http://penguinlibrary.azurewebsites.net");
 
-                //Get the table model from the backend.
-                Inventory = Client.GetTable<InventoryTypes>();
-                System.Diagnostics.Debug.WriteLine("Try Here");
 
-            }
-            catch
-            {
-                System.Diagnostics.Debug.WriteLine("Failed to Create Connection");
-            }
-        }
+        //public MobileServiceClient Client { get; set; }
+
+        //IMobileServiceTable<InventoryTypes> Inventory;
+
+        //public DatabaseConnection()
+        //{
+        //    System.Diagnostics.Debug.WriteLine("Create Connection");
+        //    try
+        //    {
+        //        //Point our client towards the backend
+        //        Client = new MobileServiceClient("http://penguinlibrary.azurewebsites.net");
+
+        //        //Get the table model from the backend.
+        //        Inventory = Client.GetTable<InventoryTypes>();
+        //        System.Diagnostics.Debug.WriteLine("Try Here");
+
+        //    }
+        //    catch
+        //    {
+        //        System.Diagnostics.Debug.WriteLine("Failed to Create Connection");
+        //    }
+        //}
 
         //public async Task AddBook(Context X)
         //{
