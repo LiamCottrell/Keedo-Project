@@ -23,6 +23,11 @@ namespace Keedo_Project.Resources.Database
     {
         HttpClient client = new HttpClient();
         //List of web addresses to fetch data.
+        //Search By Module//
+        //Search By Title
+        //Search Two latest books.
+        //
+        
 
         public async Task<List<Inventory>>  SearchModule()
         {

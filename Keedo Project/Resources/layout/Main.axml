@@ -26,8 +26,9 @@
         android:layout_marginTop="136.5dp"
         android:layout_marginRight="23.0dp"
         android:layout_centerVertical="false"
-        android:layout_centerHorizontal="true" />
-    <!--<GridView
+        android:layout_centerHorizontal="true"
+        android:theme="@android:style/Theme.Material.Panel" />
+<!--<GridView
         android:layout_marginLeft="50.0dp"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
