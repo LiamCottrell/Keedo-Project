@@ -1,15 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-
-using Android.App;
-using Android.Content;
-using Android.OS;
-using Android.Runtime;
-using Android.Views;
-using Android.Widget;
-using Newtonsoft.Json;
+﻿using Newtonsoft.Json;
 
 namespace Keedo_Project.Resources.Datamodel
 {
@@ -21,7 +10,10 @@ namespace Keedo_Project.Resources.Datamodel
     public class Inventory
     {
         //Model data so it matches my backend database
- 
+
+        [JsonProperty("InventoryID")]
+        public string InventoryID { get; set; }
+
         [JsonProperty("ISBN")]
         public string ISBN { get; set; }
 
@@ -35,7 +27,7 @@ namespace Keedo_Project.Resources.Datamodel
         public string Publisher { get; set; }
 
         [JsonProperty("Year")]
-        public String Year { get; set; }
+        public string Year { get; set; }
 
         [JsonProperty("Language")]
         public string Language { get; set; }
@@ -49,8 +41,8 @@ namespace Keedo_Project.Resources.Datamodel
         [JsonProperty("Description")]
         public string Description { get; set; }
 
-        [JsonProperty("Quantity")]
-        public String Quantity { get; set; }
+        [JsonProperty("UserID")]
+        public string UserID { get; set; }
 
         //[JsonProperty("Status")]
         //public int Status { get; set; }
