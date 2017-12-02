@@ -50,14 +50,14 @@ namespace Keedo_Project
 			// aapt resource value: 0x7f040007
 			public const int BasketButtonMain = 2130968583;
 			
-			// aapt resource value: 0x7f040017
-			public const int BookInfo = 2130968599;
+			// aapt resource value: 0x7f040016
+			public const int BookInfo = 2130968598;
 			
 			// aapt resource value: 0x7f04000f
 			public const int BookPrice = 2130968591;
 			
-			// aapt resource value: 0x7f040016
-			public const int BookTitle = 2130968598;
+			// aapt resource value: 0x7f040017
+			public const int BookTitle = 2130968599;
 			
 			// aapt resource value: 0x7f040015
 			public const int BuyBook = 2130968597;

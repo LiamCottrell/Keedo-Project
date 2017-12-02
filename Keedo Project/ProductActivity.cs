@@ -56,7 +56,7 @@ namespace Keedo_Project
             BookTitle.Text = value[0].Title;
             BookPrice.Text = value[0].Price;
             BookDescription.Text = value[0].Description;
-            Author.Text = value[0].Authors;
+            Author.Text = "value[0].Authors";
 
             Picasso.With(this)
                 .Load(value[0].Cover)

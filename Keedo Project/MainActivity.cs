@@ -38,9 +38,16 @@ namespace Keedo_Project
             TheGrid = (GridView)FindViewById(Resource.Id.Grid);
 
             TheGrid.ItemClick += Clicker_Click;
+            Clicker.Click += Clicker_Click1;
 
             onLoad();
 
+        }
+
+        private void Clicker_Click1(object sender, EventArgs e)
+        {
+            Intent intent = new Intent(this, typeof(ProductActivity));
+            this.StartActivity(intent);
         }
 
         public void Clicker_Click(object sender, AdapterView.ItemClickEventArgs e)
@@ -50,9 +57,6 @@ namespace Keedo_Project
         }
         async void onLoad()
         {
-
-            //Intent intent = new Intent(this, typeof(ProductActivity));
-            //this.StartActivity(intent);
             var x = await Inventory.SearchModule();
             y = x;
             TheGrid.Adapter = new ImageAdapter(this, y);
