@@ -28,9 +28,9 @@
         android:layout_centerVertical="false"
         android:layout_centerHorizontal="true" />
     <GridView
-        android:layout_width="match_parent"
-        android:layout_height="230dp"
-        android:layout_marginTop="190.0dp"
+        android:layout_width="360.0dp"
+        android:layout_height="210dp"
+        android:layout_marginTop="210.0dp"
         android:numColumns="2"
         android:verticalSpacing="10dp"
         android:horizontalSpacing="15dp"
@@ -81,4 +81,12 @@
             android:layout_marginRight="4.5dp"
             android:layout_marginLeft="122.5dp" />
     </Toolbar>
+    <View
+        android:layout_width="355.0dp"
+        android:layout_height="0.5dp"
+        android:layout_weight="2"
+        android:layout_marginTop="200.0dp"
+        android:layout_below="@id/OrderLayout"
+        android:background="#E6E6E6"
+        android:id="@+id/HorizLine" />
 </RelativeLayout>

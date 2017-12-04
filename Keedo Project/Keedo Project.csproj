@@ -152,6 +152,10 @@
     <AndroidResource Include="Resources\layout\BuyBook.axml">
       <SubType>Designer</SubType>
     </AndroidResource>
+    <AndroidResource Include="Resources\layout\OrderDetails.axml" />
+    <AndroidResource Include="Resources\layout\AllOrders.axml">
+      <SubType>Designer</SubType>
+    </AndroidResource>
   </ItemGroup>
   <ItemGroup>
     <AndroidResource Include="Resources\values\Strings.xml" />
