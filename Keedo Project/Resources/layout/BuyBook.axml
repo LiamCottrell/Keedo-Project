@@ -18,16 +18,13 @@
     <TableLayout
         android:minWidth="25px"
         android:minHeight="25px"
-        android:layout_height="200dp"
+        android:layout_height="wrap_content"
         android:layout_marginTop="120.0dp"
         android:id="@+id/tableLayout1"
         android:layout_centerHorizontal="false"
         android:layout_width="match_parent">
         <TableRow
             android:id="@+id/tableRow1"
-            android:layout_marginLeft="20dp"
-            android:layout_width="300.0dp"
-            android:layout_height="100.0dp">
             android:layout_marginLeft="20dp">
             <ImageView
                 android:src="@android:drawable/ic_menu_gallery"
@@ -35,58 +32,32 @@
                 android:layout_height="100dp"
                 android:layout_width="100dp"
                 android:layout_marginTop="0.0dp" />
-            <TextView
-                android:text="Price: £4.00"
-                android:textAppearance="?android:attr/textAppearanceSmall"
-                android:id="@+id/BookPrice"
-                android:layout_width="35dp"
-                android:layout_height="25dp"
-                android:layout_marginTop="40.0dp"
-                android:layout_marginLeft="20.0dp" />
-        </TableRow>
-        <TableRow
-            android:id="@+id/tableRow2"
-            android:layout_marginLeft="20dp"
-            android:layout_height="100.0dp"
-            android:layout_width="300.0dp">
-            android:layout_height="wrap_content">
-            <TextView
-                android:text="AuthorName"
-                android:textAppearance="?android:attr/textAppearanceSmall"
-                android:id="@+id/AuthorName"
-                android:layout_width="60dp"
-                android:layout_height="match_parent"
-                android:layout_column="0"
-                android:layout_marginBottom="30.0dp"
-                android:layout_marginTop="20.0dp" />
-            <RadioGroup
+            <LinearLayout
+                android:orientation="vertical"
                 android:minWidth="25px"
                 android:minHeight="25px"
                 android:layout_column="1"
-                android:id="@+id/radioGroup1"
-                android:layout_marginLeft="45.0dp"
-                android:layout_marginBottom="0.0dp"
-                android:layout_marginTop="0.0dp">
-                <RadioButton
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:checked="true"
-                    android:text="Collect Direct"
-                    android:id="@+id/CollectDirect" />
-                <RadioButton
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="Collect from Keedo"
-                    android:id="@+id/CollectKeedo" />
-                <Button
-                    android:text="Buy"
+                android:id="@+id/PurchaseBookLayout"
+                android:layout_marginTop="15.0dp">
+                <TextView
+                    android:text="&lt; Book Title &gt;"
+                    android:textAppearance="?android:attr/textAppearanceSmall"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:id="@+id/BuyBook"
-                    android:layout_marginTop="0dp"
-                    android:layout_marginRight="0dp"
-                    android:layout_marginLeft="0.0dp" />
-            </RadioGroup>
+                    android:id="@+id/BookTitle" />
+                <TextView
+                    android:text="&lt; Book Author &gt;"
+                    android:textAppearance="?android:attr/textAppearanceSmall"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/BookAuthor" />
+                <TextView
+                    android:text="&lt; Book Price &gt;"
+                    android:textAppearance="?android:attr/textAppearanceSmall"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/BookPrice" />
+            </LinearLayout>
         </TableRow>
     </TableLayout>
     <Toolbar
@@ -134,36 +105,57 @@
             android:layout_marginRight="4.5dp"
             android:layout_marginLeft="122.5dp" />
     </Toolbar>
-    <ScrollView
-        android:layout_width="480dp"
-        android:layout_height="85dp"
-        android:layout_marginBottom="0.0dp"
-        android:layout_marginTop="351.0dp"
-        android:layout_marginLeft="25.0dp"
-        android:layout_marginRight="25.0dp">
-        <TextView
-            android:text="Info about said book. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur."
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:id="@+id/BookInfo" />
-    </ScrollView>
     <TextView
-        android:text="Book Title"
+        android:text="Your Purchase"
         android:layout_width="wrap_content"
         android:textAppearance="?android:attr/textAppearanceLarge"
-        android:id="@+id/BookTitle"
-        android:layout_marginLeft="50.0dp"
+        android:id="@+id/BookPurchase"
+        android:layout_marginLeft="45.0dp"
         android:textSize="16dp"
         android:layout_toRightOf="@id/ReturnButton"
         android:layout_marginTop="83.5dp"
         android:layout_height="wrap_content"
         android:layout_marginBottom="0.0dp" />
-    <View
-        android:layout_width="355.0dp"
-        android:layout_height="0.5dp"
-        android:layout_weight="2"
-        android:layout_marginTop="122.0dp"
-        android:layout_below="@id/OrderLayout"
-        android:background="#E6E6E6"
-        android:id="@+id/HorizLine" />
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tableLayout1"
+        android:id="@+id/PurchaseLayout"
+        android:layout_width="500.0dp"
+        android:layout_marginLeft="10.0dp"
+        android:layout_marginRight="10.0dp"
+        android:layout_marginTop="25.0dp">
+        <TextView
+            android:text="Your Details : "
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/UserDetails" />
+        <EditText
+            android:inputType="textPersonName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/FirstName"
+            android:text="First Name : "
+            android:textSize="12dp" />
+        <EditText
+            android:inputType="textPersonName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/LastName"
+            android:text="Last Name : "
+            android:textSize="12dp" />
+        <EditText
+            android:inputType="textEmailAddress"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/Email"
+            android:text="Email : "
+            android:textSize="12dp" />
+        <Button
+            android:text="Purchase"
+            android:id="@+id/Purchase"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
 </RelativeLayout>
