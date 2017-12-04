@@ -17,12 +17,11 @@ namespace Keedo_Project
     [Activity(Label = "Keedo_Project", MainLauncher = true)]
     public class MainActivity : Activity
     {
-        private Button Clicker;
+        private SearchView SearchBox;
         private GridView TheGrid;
-        private ImageView x;
 
 
-        List<Inventory> y = new List<Inventory>();
+        List<Inventory> InventoryList = new List<Inventory>();
 
         InventoryControl Inventory = new InventoryControl();
         DialogBox Dialogopen = new DialogBox();
@@ -34,29 +33,44 @@ namespace Keedo_Project
             // Set our view from the "main" layout resource
             SetContentView(Resource.Layout.Main);
 
-            Clicker = (Button)FindViewById(Resource.Id.OrdersButtonMain);
+            SearchBox = (SearchView)FindViewById(Resource.Id.SearchBar);
             TheGrid = (GridView)FindViewById(Resource.Id.Grid);
 
-            TheGrid.ItemClick += Clicker_Click;
+            SearchBox.SetQueryHint("Search For A Book!");
+
+            SearchBox.QueryTextSubmit += (s, e) => example();
+
+            TheGrid.ItemClick += Grid_Clicked;
 
             onLoad();
 
         }
 
-        public void Clicker_Click(object sender, AdapterView.ItemClickEventArgs e)
-        { 
+
+        void example()
+        {
+            Toast.MakeText(this, SearchBox.Query, ToastLength.Long).Show();
+        }
+
+        public void Grid_Clicked(object sender, AdapterView.ItemClickEventArgs e)
+        {
+            
+            var BookSelected = Newtonsoft.Json.JsonConvert.SerializeObject(InventoryList[e.Position]);
+
             View view = sender as View;
-            Dialogopen.Popup(y[e.Position].Title, this);
+
+            Intent intent = new Intent(this, typeof(ProductActivity));
+            intent.PutExtra("Book Selected",BookSelected);
+            this.StartActivity(intent);
         }
         async void onLoad()
         {
-
-            //Intent intent = new Intent(this, typeof(ProductActivity));
-            //this.StartActivity(intent);
             var x = await Inventory.SearchModule();
-            y = x;
-            TheGrid.Adapter = new ImageAdapter(this, y);
+            InventoryList = x;
+            TheGrid.Adapter = new ImageAdapter(this, InventoryList);
         }
+
+        
     }
 
 }

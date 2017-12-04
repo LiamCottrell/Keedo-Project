@@ -27,6 +27,8 @@ namespace Keedo_Project
         private ImageView BookImage;
         private TextView BookPrice;
         private TextView Author;
+        private string BookSelectedUnParsed;
+        private Inventory BookSelected;
 
         DialogBox Alert = new DialogBox();
         InventoryControl Inventory = new InventoryControl();
@@ -45,22 +47,34 @@ namespace Keedo_Project
             BookPrice = (TextView)FindViewById(Resource.Id.BookPrice);
             Author = (TextView)FindViewById(Resource.Id.AuthorName);
 
+            BookSelectedUnParsed = Intent.GetStringExtra("Book Selected");
+
+
+            BookSelected = Newtonsoft.Json.JsonConvert.DeserializeObject<Inventory>(BookSelectedUnParsed);
+
             PopulateBook();
 
         }
 
-        async void PopulateBook()
+        void PopulateBook()
         {
-            var value = await Inventory.SearchModule();
 
-            BookTitle.Text = value[0].Title;
-            BookPrice.Text = value[0].Price;
-            BookDescription.Text = value[0].Description;
-            Author.Text = value[0].Authors;
-
-            Picasso.With(this)
-                .Load(value[0].Cover)
-                .Into(BookImage);
+            BookTitle.Text = BookSelected.Title;
+            BookPrice.Text = "£" + BookSelected.Price;
+            BookDescription.Text = BookSelected.Description;
+            Author.Text = BookSelected.Authors;
+            if (BookSelected.Cover.Length == 0)
+            {
+                Picasso.With(this)
+    .Load("https://scontent-lht6-1.xx.fbcdn.net/v/t31.0-8/1655427_10152860293171477_8238146892995446072_o.jpg?oh=97ed40cc6ef5923016276198862681e4&oe=5A91F48D")
+    .Into(BookImage);
+            }
+            else
+            {
+                Picasso.With(this)
+                    .Load(BookSelected.Cover)
+                    .Into(BookImage);
+            }
         }
         
     }

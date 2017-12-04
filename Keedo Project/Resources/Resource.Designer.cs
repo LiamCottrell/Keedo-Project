@@ -52,15 +52,20 @@ namespace Keedo_Project
 			
 			// aapt resource value: 0x7f040007
 			public const int BookAuthor = 2130968583;
-			
+
 			// aapt resource value: 0x7f04002b
 			public const int BookInfo = 2130968619;
-			
+			// aapt resource value: 0x7f040016
+			public const int BookInfo = 2130968598;
+
 			// aapt resource value: 0x7f04001a
 			public const int BookOrder = 2130968602;
-			
+
 			// aapt resource value: 0x7f040008
 			public const int BookPrice = 2130968584;
+
+			// aapt resource value: 0x7f040017
+			public const int BookTitle = 2130968599;
 			
 			// aapt resource value: 0x7f04000e
 			public const int BookPurchase = 2130968590;
