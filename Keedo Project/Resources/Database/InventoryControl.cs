@@ -12,7 +12,7 @@ namespace Keedo_Project.Resources.Database
 
         public async Task<List<Inventory>> SearchModule()
         {
-            var JsonData = await client.GetStringAsync("http://ec2-34-213-235-50.us-west-2.compute.amazonaws.com:3000/inv");
+            var JsonData = await client.GetStringAsync("http://ec2-34-213-235-50.us-west-2.compute.amazonaws.com:3000/inventory/select/://ec2-34-213-235-50.us-west-2.compute.amazonaws.com:3000/inv");
             var value = Newtonsoft.Json.JsonConvert.DeserializeObject<List<Inventory>>(JsonData);
             return value;
         }
