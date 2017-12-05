@@ -159,10 +159,14 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="BuyActivity.cs" />
     <Compile Include="MainActivity.cs" />
     <Compile Include="ProductActivity.cs" />
     <Compile Include="Resources\Database\BookFinder.cs" />
     <Compile Include="Resources\Database\BookHandler.cs" />
+    <Compile Include="Resources\Database\OrdersHandler.cs" />
+    <Compile Include="Resources\Database\OffersHandler.cs" />
+    <Compile Include="Resources\Database\UserHandler.cs" />
     <Compile Include="Resources\Datamodel\BookJson.cs" />
     <Compile Include="Resources\Datamodel\Books.cs" />
     <Compile Include="Resources\Datamodel\Offers.cs" />
