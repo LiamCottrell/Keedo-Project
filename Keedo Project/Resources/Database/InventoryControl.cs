@@ -10,9 +10,9 @@ namespace Keedo_Project.Resources.Database
         HttpClient client = new HttpClient();
         //List of web addresses to fetch data.
 
-        public async Task<List<Inventory>> SearchModule()
+        public async Task<List<Inventory>> SearchModule(string x)
         {
-            var JsonData = await client.GetStringAsync("http://ec2-34-213-235-50.us-west-2.compute.amazonaws.com:3000/inventory/select/://ec2-34-213-235-50.us-west-2.compute.amazonaws.com:3000/inv");
+            var JsonData = await client.GetStringAsync(x);
             var value = Newtonsoft.Json.JsonConvert.DeserializeObject<List<Inventory>>(JsonData);
             return value;
         }
