@@ -26,6 +26,9 @@ namespace Keedo_Project
 		
 		public static void UpdateIdValues()
 		{
+			global::ZXing.Mobile.Resource.Id.contentFrame = global::Keedo_Project.Resource.Id.contentFrame;
+			global::ZXing.Mobile.Resource.Layout.zxingscanneractivitylayout = global::Keedo_Project.Resource.Layout.zxingscanneractivitylayout;
+			global::ZXing.Mobile.Resource.Layout.zxingscannerfragmentlayout = global::Keedo_Project.Resource.Layout.zxingscannerfragmentlayout;
 		}
 		
 		public partial class Attribute
@@ -163,6 +166,9 @@ namespace Keedo_Project
 			// aapt resource value: 0x7f040010
 			public const int UserDetails = 2130968592;
 			
+			// aapt resource value: 0x7f040018
+			public const int contentFrame = 2130968600;
+			
 			// aapt resource value: 0x7f040000
 			public const int layout = 2130968576;
 			
@@ -211,6 +217,12 @@ namespace Keedo_Project
 			
 			// aapt resource value: 0x7f020005
 			public const int Product = 2130837509;
+			
+			// aapt resource value: 0x7f020003
+			public const int zxingscanneractivitylayout = 2130837507;
+			
+			// aapt resource value: 0x7f020004
+			public const int zxingscannerfragmentlayout = 2130837508;
 			
 			static Layout()
 			{
