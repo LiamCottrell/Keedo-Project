@@ -74,7 +74,6 @@
     <LinearLayout
         android:orientation="vertical"
         android:layout_height="150.0dp"
-        android:layout_below="@id/tableLayout1"
         android:id="@+id/OrderLayout"
         android:layout_width="500.0dp"
         android:layout_marginLeft="10.0dp"

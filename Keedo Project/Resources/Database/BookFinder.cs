@@ -21,7 +21,7 @@ namespace Keedo_Project.Resources.Database
         HttpClient client = new HttpClient();
         //List of web addresses to fetch data.
 
-        public async Task<BookJson> SearchModule(string x)
+        public async Task<BookJson> SearchGoogleAPI(string x)
         {
             var JsonData = await client.GetStringAsync("https://www.googleapis.com/books/v1/volumes?q=isbn:" + x);
             var value = Newtonsoft.Json.JsonConvert.DeserializeObject<BookJson>(JsonData);
