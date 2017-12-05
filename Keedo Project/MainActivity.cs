@@ -73,8 +73,8 @@ namespace Keedo_Project
 
         async void BarReader_Click(object sender, EventArgs e)
         {
-            //var scanner = new MobileBarcodeScanner();
-            //var result = await scanner.Scan();
+            var scanner = new MobileBarcodeScanner();
+            var result = await scanner.Scan();
 
             //string isbn = "9780080966748";
             //    var x = await Book.SearchModule(isbn);

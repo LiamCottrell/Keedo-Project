@@ -48,12 +48,20 @@ namespace Keedo_Project
             Author = (TextView)FindViewById(Resource.Id.AuthorName);
 
             BookSelectedUnParsed = Intent.GetStringExtra("Book Selected");
-
-
             BookSelected = Newtonsoft.Json.JsonConvert.DeserializeObject<Books>(BookSelectedUnParsed);
+
+
+            BuyButton.Click += BuyLoad;
 
             PopulateBook();
 
+        }
+
+        void BuyLoad(object sender, EventArgs e)
+        {
+            Intent intent = new Intent(this, typeof(BuyActivity));
+            intent.PutExtra("Book Selected", BookSelectedUnParsed);
+            this.StartActivity(intent);
         }
 
         void PopulateBook()

@@ -29,7 +29,6 @@
             android:layout_width="300.0dp"
             android:layout_height="100.0dp">
             android:layout_marginLeft="20dp">
-
             <ImageView
                 android:src="@android:drawable/ic_menu_gallery"
                 android:id="@+id/ExampleImage"
@@ -50,7 +49,6 @@
             android:layout_marginLeft="20dp"
             android:layout_height="100.0dp"
             android:layout_width="300.0dp">
-            android:layout_height="wrap_content">
             <TextView
                 android:text="AuthorName"
                 android:textAppearance="?android:attr/textAppearanceSmall"

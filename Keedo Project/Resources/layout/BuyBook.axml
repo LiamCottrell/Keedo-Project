@@ -28,7 +28,7 @@
             android:layout_marginLeft="20dp">
             <ImageView
                 android:src="@android:drawable/ic_menu_gallery"
-                android:id="@+id/ExampleImage"
+                android:id="@+id/BuyImage_Buy"
                 android:layout_height="100dp"
                 android:layout_width="100dp"
                 android:layout_marginTop="0.0dp" />
@@ -40,23 +40,23 @@
                 android:id="@+id/PurchaseBookLayout"
                 android:layout_marginTop="15.0dp">
                 <TextView
-                    android:text="&lt; Book Title &gt;"
                     android:textAppearance="?android:attr/textAppearanceSmall"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:id="@+id/BookTitle" />
+                    android:id="@+id/BookTitle_Buy"
+                    android:text="&lt; Book Title &gt;" />
                 <TextView
                     android:text="&lt; Book Author &gt;"
                     android:textAppearance="?android:attr/textAppearanceSmall"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:id="@+id/BookAuthor" />
+                    android:id="@+id/BookAuthor_Buy" />
                 <TextView
                     android:text="&lt; Book Price &gt;"
                     android:textAppearance="?android:attr/textAppearanceSmall"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:id="@+id/BookPrice" />
+                    android:id="@+id/BookPrice_Buy" />
             </LinearLayout>
         </TableRow>
     </TableLayout>
@@ -148,6 +148,9 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:id="@+id/FirstName"
+
+            android:textSize="12dp"
+            android:hint="First Name: " />
             android:text="Username : "
             android:text="First Name : "
             android:textSize="12dp" />
@@ -156,6 +159,8 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:id="@+id/LastName"
+            android:textSize="12dp"
+            android:hint="Last Name : " />
             android:text="Password : "
             android:text="Last Name : "
             android:textSize="12dp" />
@@ -164,8 +169,8 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:id="@+id/Email"
-            android:text="Email : "
-            android:textSize="12dp" />
+            android:textSize="12dp"
+            android:hint="Email : " />
         <Button
             android:text="Purchase"
             android:id="@+id/Purchase"
