@@ -54,6 +54,17 @@
         android:layout_centerHorizontal="true">
         <Button
             android:text="Orders"
+            android:layout_height="50.0dp"
+            android:id="@+id/OrdersButtonMain"
+            android:layout_width="100dp"
+            android:layout_marginBottom="10.0dp" />
+        <Button
+            android:text="Sell Book"
+            android:layout_width="100.0dp"
+            android:layout_height="50.0dp"
+            android:id="@+id/SellBook"
+            android:layout_marginBottom="10.0dp"
+            android:layout_marginLeft="120.0dp" />
             android:layout_height="wrap_content"
             android:id="@+id/OrdersButtonMain"
             android:layout_width="80dp"
@@ -74,6 +85,7 @@
     <LinearLayout
         android:orientation="vertical"
         android:layout_height="150.0dp"
+        android:layout_below="@id/tableLayout1"
         android:id="@+id/OrderLayout"
         android:layout_width="500.0dp"
         android:layout_marginLeft="10.0dp"
@@ -137,6 +149,45 @@
         android:layout_marginLeft="10.0dp"
         android:layout_marginRight="10.0dp">
         <TextView
+            android:text="Offer ID : "
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:layout_width="300.0dp"
+            android:layout_height="25.0dp"
+            android:id="@+id/OfferIDText"
+            android:layout_marginTop="5.0dp"
+            android:textStyle="bold" />
+        <TextView
+            android:text="&lt; Offer ID here &gt;"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:layout_width="300.0dp"
+            android:layout_height="25.0dp"
+            android:id="@+id/OfferID" />
+        <TextView
+            android:text="Selling Info : "
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:layout_width="300.0dp"
+            android:layout_height="25.0dp"
+            android:id="@+id/SellingInfoText"
+            android:textStyle="bold" />
+        <TextView
+            android:text="&lt; Book Title and Price here &gt;"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:layout_width="300.0dp"
+            android:layout_height="25.0dp"
+            android:id="@+id/SellingInfo" />
+        <TextView
+            android:text="Offer Status : "
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:layout_width="300.0dp"
+            android:layout_height="25.0dp"
+            android:id="@+id/OfferStatusText"
+            android:textStyle="bold" />
+        <TextView
+            android:text="&lt; Offer Status here &gt;"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:layout_width="300.0dp"
+            android:layout_height="20.0dp"
+            android:id="@+id/OfferStatus" />
             android:text="Order Number : "
             android:textAppearance="?android:attr/textAppearanceSmall"
             android:layout_width="300.0dp"

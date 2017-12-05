@@ -20,44 +20,19 @@
         android:minHeight="25px"
         android:layout_height="wrap_content"
         android:layout_marginTop="120.0dp"
-        android:id="@+id/tableLayout1"
+        android:id="@+id/LayoutSellScan"
         android:layout_centerHorizontal="false"
         android:layout_width="match_parent">
         <TableRow
             android:id="@+id/tableRow1"
             android:layout_marginLeft="20dp">
-            <ImageView
-                android:src="@android:drawable/ic_menu_gallery"
-                android:id="@+id/ExampleImage"
-                android:layout_height="100dp"
-                android:layout_width="100dp"
-                android:layout_marginTop="0.0dp" />
-            <LinearLayout
-                android:orientation="vertical"
-                android:minWidth="25px"
-                android:minHeight="25px"
-                android:layout_column="1"
-                android:id="@+id/PurchaseBookLayout"
-                android:layout_marginTop="15.0dp">
-                <TextView
-                    android:text="&lt; Book Title &gt;"
-                    android:textAppearance="?android:attr/textAppearanceSmall"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:id="@+id/BookTitle" />
-                <TextView
-                    android:text="&lt; Book Author &gt;"
-                    android:textAppearance="?android:attr/textAppearanceSmall"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:id="@+id/BookAuthor" />
-                <TextView
-                    android:text="&lt; Book Price &gt;"
-                    android:textAppearance="?android:attr/textAppearanceSmall"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:id="@+id/BookPrice" />
-            </LinearLayout>
+            <Button
+                android:text="Click to Scan Book"
+                android:layout_column="0"
+                android:id="@+id/ScanBook"
+                android:layout_height="45.0dp"
+                android:layout_width="300.0dp"
+                android:layout_marginLeft="15.0dp" />
         </TableRow>
     </TableLayout>
     <Toolbar
@@ -110,33 +85,27 @@
             android:id="@+id/SellBook"
             android:layout_marginBottom="10.0dp"
             android:layout_marginLeft="120.0dp" />
-            android:layout_height="wrap_content"
-            android:id="@+id/OrdersButtonMain"
-            android:layout_width="80dp"
-            android:layout_marginRight="4.5dp"
-            android:layout_marginLeft="122.5dp" />
     </Toolbar>
     <TextView
-        android:text="Your Purchase"
-        android:layout_width="wrap_content"
+        android:text="Sell Your Book"
+        android:layout_width="300.0dp"
         android:textAppearance="?android:attr/textAppearanceLarge"
-        android:id="@+id/BookPurchase"
+        android:id="@+id/BookSell"
         android:layout_marginLeft="45.0dp"
         android:textSize="16dp"
         android:layout_toRightOf="@id/ReturnButton"
         android:layout_marginTop="83.5dp"
-        android:layout_height="wrap_content"
+        android:layout_height="25.0dp"
         android:layout_marginBottom="0.0dp" />
     <LinearLayout
         android:orientation="vertical"
-        android:layout_height="wrap_content"
-        android:layout_below="@id/tableLayout1"
-        android:id="@+id/PurchaseLayout"
+        android:layout_height="150.0dp"
+        android:layout_below="@id/LayoutSellScan"
+        android:id="@+id/LinearLayoutUserDetails"
         android:layout_width="500.0dp"
         android:layout_marginLeft="10.0dp"
         android:layout_marginRight="10.0dp"
-        android:layout_marginTop="50.0dp">
-        android:layout_marginTop="25.0dp">
+        android:layout_marginTop="110.0dp">
         <TextView
             android:text="Your Details : "
             android:textAppearance="?android:attr/textAppearanceMedium"
@@ -149,7 +118,6 @@
             android:layout_height="wrap_content"
             android:id="@+id/FirstName"
             android:text="Username : "
-            android:text="First Name : "
             android:textSize="12dp" />
         <EditText
             android:inputType="textPersonName"
@@ -157,19 +125,44 @@
             android:layout_height="wrap_content"
             android:id="@+id/LastName"
             android:text="Password : "
-            android:text="Last Name : "
-            android:textSize="12dp" />
-        <EditText
-            android:inputType="textEmailAddress"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:id="@+id/Email"
-            android:text="Email : "
             android:textSize="12dp" />
         <Button
-            android:text="Purchase"
-            android:id="@+id/Purchase"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content" />
+            android:text="Sell"
+            android:id="@+id/Sell"
+            android:layout_width="340.0dp"
+            android:layout_height="60.0dp" />
+    </LinearLayout>
+    <ImageView
+        android:src="@android:drawable/ic_menu_gallery"
+        android:layout_width="50.0dp"
+        android:layout_height="50.0dp"
+        android:layout_below="@id/LayoutSellScan"
+        android:id="@+id/imageView1"
+        android:layout_marginLeft="40.0dp" />
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="250.0dp"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/imageView1"
+        android:id="@+id/LayoutBookInfo"
+        android:layout_marginTop="180.0dp">
+        <TextView
+            android:text="&lt; Book Title &gt;"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:id="@+id/ScanBookTitle"
+            android:layout_width="200.0dp"
+            android:layout_height="25.0dp" />
+        <TextView
+            android:text="&lt; Book Author &gt;"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:layout_width="200.0dp"
+            android:layout_height="25.0dp"
+            android:id="@+id/ScanBookAuthor" />
+        <EditText
+            android:inputType="numberDecimal"
+            android:layout_width="200.0dp"
+            android:layout_height="40.0dp"
+            android:id="@+id/ScanBookPrice"
+            android:text="Price : " />
     </LinearLayout>
 </RelativeLayout>

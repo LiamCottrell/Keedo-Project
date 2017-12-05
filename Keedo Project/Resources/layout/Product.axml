@@ -29,6 +29,7 @@
             android:layout_width="300.0dp"
             android:layout_height="100.0dp">
             android:layout_marginLeft="20dp">
+
             <ImageView
                 android:src="@android:drawable/ic_menu_gallery"
                 android:id="@+id/ExampleImage"
@@ -128,6 +129,17 @@
         android:layout_centerHorizontal="true">
         <Button
             android:text="Orders"
+            android:layout_height="50.0dp"
+            android:id="@+id/OrdersButtonMain"
+            android:layout_width="100dp"
+            android:layout_marginBottom="10.0dp" />
+        <Button
+            android:text="Sell Book"
+            android:layout_width="100.0dp"
+            android:layout_height="50.0dp"
+            android:id="@+id/SellBook"
+            android:layout_marginBottom="10.0dp"
+            android:layout_marginLeft="120.0dp" />
             android:layout_height="wrap_content"
             android:id="@+id/OrdersButtonMain"
             android:layout_width="80dp"
