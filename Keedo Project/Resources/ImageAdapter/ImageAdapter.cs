@@ -23,19 +23,19 @@ namespace Keedo_Project.Resources.ImageAdapter
 
         private LayoutInflater inflater;
 
-        List<Inventory> Inventory;
+        List<Books> Books;
 
-        public ImageAdapter(Context c, List<Inventory> x)
+        public ImageAdapter(Context c, List<Books> x)
         {
             context = c;
-            Inventory = x;
+            Books = x;
         }
 
         public override int Count
         {
             get
             {
-                return Inventory.Count;
+                return Books.Count;
             }
         }
 
@@ -72,11 +72,11 @@ namespace Keedo_Project.Resources.ImageAdapter
             }
                 //Binding data
 
-                txtView.Text = Inventory[position].Title;
-            if (Inventory[position].Cover.Length > 0)
+                txtView.Text = Books[position].title;
+            if (Books[position].cover.Length > 0)
             {
                 Picasso.With(context)
-                       .Load(Inventory[position].Cover)
+                       .Load(Books[position].cover)
                        .Into(imgView);
             }
             else

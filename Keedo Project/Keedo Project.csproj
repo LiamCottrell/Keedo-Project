@@ -17,7 +17,7 @@
     <AndroidResgenClass>Resource</AndroidResgenClass>
     <GenerateSerializationAssemblies>Off</GenerateSerializationAssemblies>
     <AndroidUseLatestPlatformSdk>True</AndroidUseLatestPlatformSdk>
-    <TargetFrameworkVersion>v8.0</TargetFrameworkVersion>
+    <TargetFrameworkVersion>v7.1</TargetFrameworkVersion>
     <AndroidManifest>Properties\AndroidManifest.xml</AndroidManifest>
     <MonoAndroidResourcePrefix>Resources</MonoAndroidResourcePrefix>
     <MonoAndroidAssetsPrefix>Assets</MonoAndroidAssetsPrefix>
@@ -162,9 +162,12 @@
     <Compile Include="MainActivity.cs" />
     <Compile Include="ProductActivity.cs" />
     <Compile Include="Resources\Database\BookFinder.cs" />
-    <Compile Include="Resources\Database\InventoryControl.cs" />
+    <Compile Include="Resources\Database\BookHandler.cs" />
     <Compile Include="Resources\Datamodel\BookJson.cs" />
-    <Compile Include="Resources\Datamodel\Inventory.cs" />
+    <Compile Include="Resources\Datamodel\Books.cs" />
+    <Compile Include="Resources\Datamodel\Offers.cs" />
+    <Compile Include="Resources\Datamodel\Orders.cs" />
+    <Compile Include="Resources\Datamodel\Users.cs" />
     <Compile Include="Resources\DialogControl\Dialogbox.cs" />
     <Compile Include="Resources\ImageAdapter\ImageAdapter.cs" />
     <Compile Include="Resources\Resource.Designer.cs" />
