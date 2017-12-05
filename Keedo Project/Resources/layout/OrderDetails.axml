@@ -65,6 +65,11 @@
             android:id="@+id/SellBook"
             android:layout_marginBottom="10.0dp"
             android:layout_marginLeft="120.0dp" />
+            android:layout_height="wrap_content"
+            android:id="@+id/OrdersButtonMain"
+            android:layout_width="80dp"
+            android:layout_marginRight="4.5dp"
+            android:layout_marginLeft="122.5dp" />
     </Toolbar>
     <LinearLayout
         android:orientation="vertical"

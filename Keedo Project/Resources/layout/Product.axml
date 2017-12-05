@@ -28,6 +28,8 @@
             android:layout_marginLeft="20dp"
             android:layout_width="300.0dp"
             android:layout_height="100.0dp">
+            android:layout_marginLeft="20dp">
+
             <ImageView
                 android:src="@android:drawable/ic_menu_gallery"
                 android:id="@+id/ExampleImage"
@@ -48,6 +50,7 @@
             android:layout_marginLeft="20dp"
             android:layout_height="100.0dp"
             android:layout_width="300.0dp">
+            android:layout_height="wrap_content">
             <TextView
                 android:text="AuthorName"
                 android:textAppearance="?android:attr/textAppearanceSmall"
@@ -137,6 +140,11 @@
             android:id="@+id/SellBook"
             android:layout_marginBottom="10.0dp"
             android:layout_marginLeft="120.0dp" />
+            android:layout_height="wrap_content"
+            android:id="@+id/OrdersButtonMain"
+            android:layout_width="80dp"
+            android:layout_marginRight="4.5dp"
+            android:layout_marginLeft="122.5dp" />
     </Toolbar>
     <ScrollView
         android:layout_width="480dp"

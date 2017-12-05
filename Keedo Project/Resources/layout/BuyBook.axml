@@ -110,6 +110,11 @@
             android:id="@+id/SellBook"
             android:layout_marginBottom="10.0dp"
             android:layout_marginLeft="120.0dp" />
+            android:layout_height="wrap_content"
+            android:id="@+id/OrdersButtonMain"
+            android:layout_width="80dp"
+            android:layout_marginRight="4.5dp"
+            android:layout_marginLeft="122.5dp" />
     </Toolbar>
     <TextView
         android:text="Your Purchase"
@@ -131,6 +136,7 @@
         android:layout_marginLeft="10.0dp"
         android:layout_marginRight="10.0dp"
         android:layout_marginTop="50.0dp">
+        android:layout_marginTop="25.0dp">
         <TextView
             android:text="Your Details : "
             android:textAppearance="?android:attr/textAppearanceMedium"
@@ -143,6 +149,7 @@
             android:layout_height="wrap_content"
             android:id="@+id/FirstName"
             android:text="Username : "
+            android:text="First Name : "
             android:textSize="12dp" />
         <EditText
             android:inputType="textPersonName"
@@ -150,6 +157,14 @@
             android:layout_height="wrap_content"
             android:id="@+id/LastName"
             android:text="Password : "
+            android:text="Last Name : "
+            android:textSize="12dp" />
+        <EditText
+            android:inputType="textEmailAddress"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/Email"
+            android:text="Email : "
             android:textSize="12dp" />
         <Button
             android:text="Purchase"

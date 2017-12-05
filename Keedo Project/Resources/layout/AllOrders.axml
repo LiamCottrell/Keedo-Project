@@ -65,6 +65,11 @@
             android:id="@+id/SellBook"
             android:layout_marginBottom="10.0dp"
             android:layout_marginLeft="120.0dp" />
+            android:layout_height="wrap_content"
+            android:id="@+id/OrdersButtonMain"
+            android:layout_width="80dp"
+            android:layout_marginRight="4.5dp"
+            android:layout_marginLeft="122.5dp" />
     </Toolbar>
     <TextView
         android:text="Your Orders"
@@ -183,5 +188,44 @@
             android:layout_width="300.0dp"
             android:layout_height="20.0dp"
             android:id="@+id/OfferStatus" />
+            android:text="Order Number : "
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:layout_width="300.0dp"
+            android:layout_height="25.0dp"
+            android:id="@+id/OrderIDText"
+            android:layout_marginTop="5.0dp"
+            android:textStyle="bold" />
+        <TextView
+            android:text="&lt; Order number here &gt;"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:layout_width="300.0dp"
+            android:layout_height="25.0dp"
+            android:id="@+id/OrderID" />
+        <TextView
+            android:text="Collect From : "
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:layout_width="300.0dp"
+            android:layout_height="25.0dp"
+            android:id="@+id/CollectFromText"
+            android:textStyle="bold" />
+        <TextView
+            android:text="&lt; Collection From here (Keedo/Person) &gt;"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:layout_width="300.0dp"
+            android:layout_height="25.0dp"
+            android:id="@+id/CollectFrom" />
+        <TextView
+            android:text="Total : "
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:layout_width="300.0dp"
+            android:layout_height="25.0dp"
+            android:id="@+id/OrderTotalText"
+            android:textStyle="bold" />
+        <TextView
+            android:text="&lt; Order total here £ &gt;"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:layout_width="300.0dp"
+            android:layout_height="25.0dp"
+            android:id="@+id/OrderTotal" />
     </LinearLayout>
 </RelativeLayout>
