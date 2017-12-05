@@ -66,6 +66,17 @@
     <AndroidResource Include="Resources\layout\Main.axml">
       <SubType>Designer</SubType>
     </AndroidResource>
+    <AndroidResource Include="Resources\layout\Product.axml" />
+    <AndroidResource Include="Resources\layout\AllOrders.axml" />
+    <AndroidResource Include="Resources\layout\BuyBook.axml" />
+    <AndroidResource Include="Resources\layout\Model.axml" />
+    <AndroidResource Include="Resources\layout\OrderDetails.axml" />
+    <AndroidResource Include="Resources\layout\SellBook.axml">
+      <SubType>Designer</SubType>
+    </AndroidResource>
+    <AndroidResource Include="Resources\layout\OfferDetails.axml">
+      <SubType>Designer</SubType>
+    </AndroidResource>
   </ItemGroup>
   <ItemGroup>
     <AndroidResource Include="Resources\values\Strings.xml" />

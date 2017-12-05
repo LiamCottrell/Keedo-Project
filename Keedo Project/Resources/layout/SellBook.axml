@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="10dp"
+    android:minWidth="25px"
+    android:minHeight="25px">
+    <Button
+        android:text="Return"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/ReturnButton"
+        android:layout_marginTop="70dp"
+        android:layout_marginRight="0dp"
+        android:layout_marginLeft="0dp" />
+    <TableLayout
+        android:minWidth="25px"
+        android:minHeight="25px"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="120.0dp"
+        android:id="@+id/LayoutSellScan"
+        android:layout_centerHorizontal="false"
+        android:layout_width="match_parent">
+        <TableRow
+            android:id="@+id/tableRow1"
+            android:layout_marginLeft="20dp">
+            <Button
+                android:text="Click to Scan Book"
+                android:layout_column="0"
+                android:id="@+id/ScanBook"
+                android:layout_height="45.0dp"
+                android:layout_width="300.0dp"
+                android:layout_marginLeft="15.0dp" />
+        </TableRow>
+    </TableLayout>
+    <Toolbar
+        android:background="?android:attr/colorPrimary"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/MainToolbar"
+        android:layout_marginBottom="0.0dp"
+        android:layout_marginTop="0.0dp">
+        <ImageButton
+            android:src="@android:drawable/ic_menu_gallery"
+            android:layout_width="50.0dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/MenuButtonMain"
+            android:layout_marginLeft="0.0dp" />
+        <TextView
+            android:text="Library"
+            android:layout_width="50.0dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/LibraryHeader"
+            android:layout_marginLeft="100.0dp"
+            android:layout_marginRight="4.5dp" />
+        <ImageButton
+            android:src="@android:drawable/ic_menu_gallery"
+            android:layout_width="50.0dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/BasketButtonMain"
+            android:layout_marginLeft="72.5dp"
+            android:layout_marginRight="0.0dp" />
+    </Toolbar>
+    <Toolbar
+        android:background="?android:attr/colorPrimary"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/MainToolbar"
+        android:layout_marginBottom="0.0dp"
+        android:layout_marginTop="440.0dp"
+        android:layout_marginRight="21.5dp"
+        android:layout_centerHorizontal="true">
+        <Button
+            android:text="Orders"
+            android:layout_height="50.0dp"
+            android:id="@+id/OrdersButtonMain"
+            android:layout_width="100dp"
+            android:layout_marginBottom="10.0dp" />
+        <Button
+            android:text="Sell Book"
+            android:layout_width="100.0dp"
+            android:layout_height="50.0dp"
+            android:id="@+id/SellBook"
+            android:layout_marginBottom="10.0dp"
+            android:layout_marginLeft="120.0dp" />
+    </Toolbar>
+    <TextView
+        android:text="Sell Your Book"
+        android:layout_width="300.0dp"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:id="@+id/BookSell"
+        android:layout_marginLeft="45.0dp"
+        android:textSize="16dp"
+        android:layout_toRightOf="@id/ReturnButton"
+        android:layout_marginTop="83.5dp"
+        android:layout_height="25.0dp"
+        android:layout_marginBottom="0.0dp" />
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_height="150.0dp"
+        android:layout_below="@id/LayoutSellScan"
+        android:id="@+id/LinearLayoutUserDetails"
+        android:layout_width="500.0dp"
+        android:layout_marginLeft="10.0dp"
+        android:layout_marginRight="10.0dp"
+        android:layout_marginTop="110.0dp">
+        <TextView
+            android:text="Your Details : "
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/UserDetails" />
+        <EditText
+            android:inputType="textPersonName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/FirstName"
+            android:text="Username : "
+            android:textSize="12dp" />
+        <EditText
+            android:inputType="textPersonName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/LastName"
+            android:text="Password : "
+            android:textSize="12dp" />
+        <Button
+            android:text="Sell"
+            android:id="@+id/Sell"
+            android:layout_width="340.0dp"
+            android:layout_height="60.0dp" />
+    </LinearLayout>
+    <ImageView
+        android:src="@android:drawable/ic_menu_gallery"
+        android:layout_width="50.0dp"
+        android:layout_height="50.0dp"
+        android:layout_below="@id/LayoutSellScan"
+        android:id="@+id/imageView1"
+        android:layout_marginLeft="40.0dp" />
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="250.0dp"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/imageView1"
+        android:id="@+id/LayoutBookInfo"
+        android:layout_marginTop="180.0dp">
+        <TextView
+            android:text="&lt; Book Title &gt;"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:id="@+id/ScanBookTitle"
+            android:layout_width="200.0dp"
+            android:layout_height="25.0dp" />
+        <TextView
+            android:text="&lt; Book Author &gt;"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:layout_width="200.0dp"
+            android:layout_height="25.0dp"
+            android:id="@+id/ScanBookAuthor" />
+        <EditText
+            android:inputType="numberDecimal"
+            android:layout_width="200.0dp"
+            android:layout_height="40.0dp"
+            android:id="@+id/ScanBookPrice"
+            android:text="Price : " />
+    </LinearLayout>
+</RelativeLayout>

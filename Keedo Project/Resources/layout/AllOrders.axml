@@ -1,0 +1,187 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="10dp"
+    android:minWidth="25px"
+    android:minHeight="25px">
+    <Button
+        android:text="Return"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/ReturnButton"
+        android:layout_marginTop="70dp"
+        android:layout_marginRight="0dp"
+        android:layout_marginLeft="0dp" />
+    <Toolbar
+        android:background="?android:attr/colorPrimary"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/MainToolbar"
+        android:layout_marginBottom="0.0dp"
+        android:layout_marginTop="0.0dp">
+        <ImageButton
+            android:src="@android:drawable/ic_menu_gallery"
+            android:layout_width="50.0dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/MenuButtonMain"
+            android:layout_marginLeft="0.0dp" />
+        <TextView
+            android:text="Library"
+            android:layout_width="50.0dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/LibraryHeader"
+            android:layout_marginLeft="100.0dp"
+            android:layout_marginRight="4.5dp" />
+        <ImageButton
+            android:src="@android:drawable/ic_menu_gallery"
+            android:layout_width="50.0dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/BasketButtonMain"
+            android:layout_marginLeft="72.5dp"
+            android:layout_marginRight="0.0dp" />
+    </Toolbar>
+    <Toolbar
+        android:background="?android:attr/colorPrimary"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/MainToolbar"
+        android:layout_marginBottom="0.0dp"
+        android:layout_marginTop="440.0dp"
+        android:layout_marginRight="21.5dp"
+        android:layout_centerHorizontal="true">
+        <Button
+            android:text="Orders"
+            android:layout_height="50.0dp"
+            android:id="@+id/OrdersButtonMain"
+            android:layout_width="100dp"
+            android:layout_marginBottom="10.0dp" />
+        <Button
+            android:text="Sell Book"
+            android:layout_width="100.0dp"
+            android:layout_height="50.0dp"
+            android:id="@+id/SellBook"
+            android:layout_marginBottom="10.0dp"
+            android:layout_marginLeft="120.0dp" />
+    </Toolbar>
+    <TextView
+        android:text="Your Orders"
+        android:layout_width="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:id="@+id/BookOrder"
+        android:layout_marginLeft="55.0dp"
+        android:textSize="16dp"
+        android:layout_toRightOf="@id/ReturnButton"
+        android:layout_marginTop="83.5dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="0.0dp" />
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_height="150.0dp"
+        android:layout_below="@id/tableLayout1"
+        android:id="@+id/OrderLayout"
+        android:layout_width="500.0dp"
+        android:layout_marginLeft="10.0dp"
+        android:layout_marginRight="10.0dp"
+        android:layout_marginTop="120.0dp">
+        <TextView
+            android:text="Order Number  :"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:layout_width="300.0dp"
+            android:layout_height="25.0dp"
+            android:id="@+id/OrderIDText"
+            android:layout_marginTop="5.0dp"
+            android:textStyle="bold" />
+        <TextView
+            android:text="&lt; Order number here &gt;"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:layout_width="300.0dp"
+            android:layout_height="25.0dp"
+            android:id="@+id/OrderID" />
+        <TextView
+            android:text="Collect From : "
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:layout_width="300.0dp"
+            android:layout_height="25.0dp"
+            android:id="@+id/CollectFromText"
+            android:textStyle="bold" />
+        <TextView
+            android:text="&lt; Collection From here (Keedo/Person) &gt;"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:layout_width="300.0dp"
+            android:layout_height="25.0dp"
+            android:id="@+id/CollectFrom" />
+        <TextView
+            android:text="Total : "
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:layout_width="300.0dp"
+            android:layout_height="25.0dp"
+            android:id="@+id/OrderTotalText"
+            android:textStyle="bold" />
+        <TextView
+            android:text="&lt; Order total here £ &gt;"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:layout_width="300.0dp"
+            android:layout_height="25.0dp"
+            android:id="@+id/OrderTotal" />
+    </LinearLayout>
+    <View
+        android:layout_width="355.0dp"
+        android:layout_height="0.5dp"
+        android:layout_weight="2"
+        android:layout_marginTop="0.5dp"
+        android:layout_below="@id/OrderLayout"
+        android:background="#E6E6E6"
+        android:id="@+id/HorizLine" />
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="500.0dp"
+        android:layout_height="150.0dp"
+        android:layout_below="@id/OrderLayout"
+        android:id="@+id/linearLayout1"
+        android:layout_marginLeft="10.0dp"
+        android:layout_marginRight="10.0dp">
+        <TextView
+            android:text="Offer ID : "
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:layout_width="300.0dp"
+            android:layout_height="25.0dp"
+            android:id="@+id/OfferIDText"
+            android:layout_marginTop="5.0dp"
+            android:textStyle="bold" />
+        <TextView
+            android:text="&lt; Offer ID here &gt;"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:layout_width="300.0dp"
+            android:layout_height="25.0dp"
+            android:id="@+id/OfferID" />
+        <TextView
+            android:text="Selling Info : "
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:layout_width="300.0dp"
+            android:layout_height="25.0dp"
+            android:id="@+id/SellingInfoText"
+            android:textStyle="bold" />
+        <TextView
+            android:text="&lt; Book Title and Price here &gt;"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:layout_width="300.0dp"
+            android:layout_height="25.0dp"
+            android:id="@+id/SellingInfo" />
+        <TextView
+            android:text="Offer Status : "
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:layout_width="300.0dp"
+            android:layout_height="25.0dp"
+            android:id="@+id/OfferStatusText"
+            android:textStyle="bold" />
+        <TextView
+            android:text="&lt; Offer Status here &gt;"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:layout_width="300.0dp"
+            android:layout_height="20.0dp"
+            android:id="@+id/OfferStatus" />
+    </LinearLayout>
+</RelativeLayout>
